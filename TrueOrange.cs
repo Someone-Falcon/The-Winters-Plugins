@@ -5,11 +5,11 @@ using MCGalaxy.Tasks;
 
 namespace PluginRainbowColors
 {
-    public sealed class RainbowPlugin : Plugin 
+    public sealed class TrueOrange : Plugin 
     {
-        public override string creator { get { return "Not UnknownShadow200"; } }
+        public override string creator { get { return "happen3"; } }
         public override string MCGalaxy_Version { get { return "1.9.1.4"; } }
-        public override string name { get { return "Rainbow"; } }
+        public override string name { get { return "True Orange"; } }
 
         SchedulerTask task;
         public override void Load(bool startup) {
@@ -21,7 +21,7 @@ namespace PluginRainbowColors
         	Server.MainScheduler.Cancel(task);
         }
         
-        static string[] colors = { "9400D3", "4B0082", "0000FF", "00FF00", "FFFF00", "FF7F00", "FF0000" };
+        static string[] colors = { "db9718", "db9718" };
         static int index;
         static void RainbowCallback(SchedulerTask task) {
         	index = (index + 1) % colors.Length;
